@@ -1,0 +1,126 @@
+/* Reset y tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --azul: #5570d6;
+    --azulOscuro: #0B2545;
+    --azulGris: #6385c4;
+    --blanco: #fff;
+    --letra: black;
+    --fuente: "Poppins", Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--azulOscuro);
+}
+
+.contenedor-formulario {
+    display: flex;
+    width: 900px;
+    height: 600px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.imagen-formulario {
+    flex: 1;
+    background-image: url('../img/img-registro.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.imagen-formulario img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.formulario {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 20px;
+}
+
+.texto-formulario {
+    margin-bottom: 15px;
+}
+
+.formulario h2 {
+    padding-top: 2rem;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.formulario p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #555;
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.input input,
+.input select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input input:focus,
+.input select:focus {
+    border-color: #668cff;
+}
+
+.input input[type="submit"] {
+    background-color: #668cff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.input input[type="submit"]:hover {
+    background-color: var(--azul);
+}
+
+.registro-texto {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.registro-texto a {
+    color: #668cff;
+    text-decoration: none;
+    font-weight: 600;
+}

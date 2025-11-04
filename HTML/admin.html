@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kumba - Admin</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/auth.js"></script>
+</head>
+<body>
+  <header class="topbar"><h1>Kumba - Administración</h1><button onclick="logout()" class="btn">Cerrar sesión</button></header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Crear / Agregar Clase</h2>
+      <label>Profesor</label><input id="c_prof" type="text">
+      <label>Clase</label><input id="c_name" type="text">
+      <label>Hora</label><input id="c_time" type="time">
+      <label>Sede</label>
+      <select id="c_sede">
+        <option value="Chapinero">Chapinero</option>
+        <option value="Cedritos">Cedritos</option>
+        <option value="Suba">Suba</option>
+      </select>
+      <label>Cupo</label><input id="c_cupo" type="number" min="1" value="10">
+      <div class="row">
+        <button id="btnAddClass" class="btn primary">Agregar clase</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Clases programadas</h2>
+      <div id="classList"></div>
+    </section>
+  </main>
+</body>
+</html>

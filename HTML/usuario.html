@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kumba - Usuario</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/auth.js"></script>
+</head>
+<body>
+  <header class="topbar"><h1>Kumba - Usuario</h1><button onclick="logout()" class="btn">Cerrar sesión</button></header>
+
+  <main class="container">
+    <h2>Nuestras sedes</h2>
+    <div id="sedes" class="cards"></div>
+  </main>
+
+  <!-- modal sede -->
+  <div class="overlay hidden" id="sedeOverlay"></div>
+  <div class="modal hidden" id="sedeModal">
+    <button class="modal-close" id="closeSede">&times;</button>
+    <div id="sedeContent"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kumba - Iniciar sesión</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/auth.js"></script>
+</head>
+<body>
+  <main class="page-center">
+    <section class="card split">
+      <div class="left image-area" id="adminTrigger" title="Doble clic para admin">
+        <!-- Imagen decorativa: usa la que tengas en img/ o fondo -->
+      </div>
+
+      <div class="right form-area">
+        <h1>¡Bienvenido a Kumba!</h1>
+        <p>Inicia sesión con tu cuenta</p>
+
+        <label for="email">Correo</label>
+        <input id="email" type="email" placeholder="ej: usuario@kumba.com">
+
+        <label for="pass">Contraseña</label>
+        <input id="pass" type="password" placeholder="********">
+
+        <div class="row">
+          <button id="btnLogin" class="btn primary">Iniciar sesión</button>
+          <a href="registro.html" class="btn link">Registrarse</a>
+        </div>
+
+        <p class="muted">Doble clic en la zona izquierda para acceso administrador</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal admin -->
+  <div class="overlay hidden" id="overlay"></div>
+  <div class="modal hidden" id="adminModal">
+    <button class="modal-close" id="closeAdmin">&times;</button>
+    <h2>Acceso Administrador</h2>
+    <label>Usuario</label>
+    <input id="adminUser" type="text" placeholder="usuario admin">
+    <label>Contraseña</label>
+    <input id="adminPass" type="password" placeholder="contraseña admin">
+    <button id="btnAdminLogin" class="btn primary">Entrar como admin</button>
+  </div>
+</body>
+</html>

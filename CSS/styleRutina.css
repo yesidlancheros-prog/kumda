@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    color: #0213ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#horarios a {
+  background-color: #0213ff;
+  color: #fff;
+  transition: all 0.3s ease;
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  display: inline-block; 
+}
+
+#horarios a:hover {
+  background-color: #2d2d2d; 
+  color: #fff; 
+}
+
+ul {
+  list-style-type: none; 
+  text-align: left;
+}
+
+
+.rutinas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.rutina {
+    background-color: #111;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.rutina img {
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 2px 30px rgba(2, 6, 255, 0.4);
+    margin-bottom: 1rem;
+}
+
+.rutina h2 {
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.rutina p {
+    color: #999;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    background: linear-gradient(90deg, #0011ff, #6f00ff);
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #001aff, #7f00ff);
+}
+
+.rutina:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 30px rgba(6, 2, 255, 0.6);
+}
+
+.rutina-detalle {
+    margin-top: 2rem;
+    background-color: #111;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.rutina-detalle h1 {
+    color: #0213ff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.rutina-detalle ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rutina-detalle li {
+    background-color: #222;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.rutina-detalle li:hover {
+    background-color: #2d2d2d;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #999;
+}

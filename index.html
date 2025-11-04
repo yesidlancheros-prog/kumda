@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumba</title>
+    <link rel="icon" type="image/x-icon" href="img/icono.ico" />
+    <link rel="stylesheet" href="CSS/home.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--barra de menu-->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="img/icono.ico">
+                <h1>Zenfit</h1>
+            </div>
+            <!-- boton menu movil -->
+            <input id="menu-toggle" type="checkbox" class="menu-toggle" />
+            <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú">
+                <span></span>
+            </label>
+
+            <!-- menu principal -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#ofertas">Planes</a></li>
+                    <li><a href="#clases">Clases</a></li>
+                    <li><a href="#sedes">Sedes</a></li>
+                    <li id="login"><a href="HTML/login.html">Iniciar Sesión</a></li> <!-- enlace a login -->
+                    <li id="registro"><a href="HTML/registro.html">Registrarse</a></li> <!-- enlace a registro -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!--inicio - zona principal-->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <p> <br>En <strong>Kumba</strong>, cuidamos tu bienestar.
+                    Entrena en nuestras sedes con los mejores entrenadores y
+                    equipos modernos para alcanzar tu mejor versión.</p>
+                <p>“Transforma tu cuerpo, supera tus límites y alcanza tus metas con nosotros.”</p>
+                <a href="#ofertas" class="button">Únete ahora</a>
+            </div>
+        </section>
+
+        <!--OFERTAS-->
+        <section id="ofertas" class="ofertas">
+            <div class="tittle">
+                <h2>Nuestros Planes</h2>
+                <p>Aprovecha de las ofertas exclusivas en Zenfit y entrena al mejor precio.</p>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- Cartas de las ofertas -->
+                     <article class="section-card">
+                        <div class="card-body">
+                            <h3> Plan abierto </h3>
+                            <p class="meta">Acceso al gimnasio<br> 
+                                Rutina del día<br>
+                                Orientación del instructor.<br>
+                                Por tan solo:
+                            </p>
+                            <h4>Desde $39.900 COP</h4>
+                            <div class="card-actions">
+                                <a href="HTML/registro.html" class="btn small">¡Inscríbete ya!</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section-card">
+                        <div class="card-body">
+                            <h3> Mensual </h3>
+                            <p class="meta">Acceso libre a todas las máquinas y áreas comunes<br>
+                                Rutinas personalizadas de inicio<br>
+                                Participación en clases grupales según cupo<br>
+                                Beneficio: Flexibilidad total, sin permanencia.<br>
+                                Paga el mes por tan solo:
+                            </p>
+                            <h4>Desde $109.900 COP</h4>
+                            <div class="card-actions">
+                                <a href="HTML/registro.html" class="btn small">¡Inscríbete ya!</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="section-card">
+                        <div class="card-body">
+                            <h3> Trimestral</h3>
+                            <p class="meta">Acceso libre a todas las máquinas y áreas comunes.<br>
+                                Acceso de rutinas perzonalizadas<br>
+                                Participación en clases grupales según cupo<br>
+                                Descuento del 10% sobre el pago mensual<br>
+                                Beneficio: Ahorro y seguimiento más constante.<br>
+                                Paga el mes por tan solo:
+                            </p>
+                            <h4>Desde $98.900 COP</h4>
+                            <div class="card-actions">
+                                <a href="HTML/registro.html" class="btn small">¡Inscríbete ya!</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="section-card">
+                        <div class="card-body">
+                            <h3> Semestral</h3>
+                            <p class="meta">Acceso libre a todas las máquinas y áreas comunes.<br>
+                                Acceso de rutinas perzonalizadas<br>
+                                Participación en clases grupales según cupo<br>
+                                Evaluación física cada 2 meses<br>
+                                1 consulta nutricional gratuita<br>
+                                Descuento del 15% sobre el pago mensual<br>
+                                Beneficio: Mayor ahorro y resultados más medibles.<br>
+                                Paga el mes por tan solo:
+                            </p>
+                            <h4>Desde $93.900 COP</h4>
+                            <div class="card-actions">
+                                <a href="HTML/registro.html" class="btn small">¡Inscríbete ya!</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="section-card">
+                        <div class="card-body">
+                            <h3> Anual</h3>
+                            <p class="meta">La opción ideal para socios fieles que ven el entrenamiento como parte de su estilo de vida.<br>
+                                Acceso libre a todas las máquinas y áreas comunes.<br>
+                                Acceso de rutinas perzonalizadas<br>
+                                Evaluaciones físicas trimestrales<br>
+                                Plan nutricional personalizado actualizado cada 3 meses<br>
+                                Descuento del 25% sobre el pago mensual<br>
+                                Acceso prioritario a clases<br>
+                                Beneficio: Máximo ahorro estabilidad y atención personalizada.</p>
+                            <h4>$82.900 COP al mes y $994.900 por el año completo.</h4>
+                            <div class="card-actions">
+                                <a href="HTML/registro.html" class="btn small">¡Inscríbete ya!</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Entrenador personal -->
+                    <article class="section-card">
+                        <div class="card-body">
+                            <h3>Plan Entrenador Personal</h3>
+                            <p class="meta">
+                                Mejora tus resultados con sesiones personalizadas junto a un entrenador certificado.
+                                <br>Incluye seguimiento nutricional y plan de entrenamiento adaptado a ti.
+                            </p>
+                            <h4>Desde $69.900 COP por sesión</h4>
+                            <div class="card-actions">
+                                <a href="#coach" class="btn small">Mas informacion</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <button class="carousel-btn prev">&#10094;</button>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </section>
+
+        <!--Secccion sedes-->
+        <section id="sedes" class="sedes">
+            <div class="tittle">
+                <h2>Nuestras Sedes</h2>
+            </div>
+            <div class="sedes-container">
+                <div class="sedes-card">
+                    <!--sede chapinero-->
+                    <article class="section-card">
+                        <div class="thumb">
+                            <img src="img/chapinero.jpg" alt="gimnasio chapinero">
+                        </div>
+                        <div class="card-body">
+                            <h4>Chapinero </h4>
+                            <p class="meta">📍 Calle 85 #7 - 13, Carrera, Bogotá D.C.</p>
+                            <div class="boton-modal">
+                                <label for="modal-chapinero">Ver sede</label>
+                            </div>
+                        </div>
+                    </article>
+                    <!--ventana modal chapinero-->
+                    <input type="checkbox" id="modal-chapinero" class="modal-toggle">
+                    <div class="container-modal">
+                        <div class="content-modal">
+                            <div class="thumb">
+                                <img src="img/chapinero.jpg" alt="gimnasio chapinero">
+                            </div>
+                            <div class="card-body">
+                                <h4>Chapinero </h4>
+                                <p class="meta">📍 Calle 85 #7 - 13, Carrera, Bogotá D.C.</p>
+                                <p class="descripcion">
+                                    Nuestra sede Chapinero combina un ambiente moderno con amplias zonas de
+                                    entrenamiento,
+                                    ideales para clases grupales y entrenamiento funcional. <br>
+                                    💪 Contamos con sala de spinning, zona de peso libre y área de estiramiento.
+                                    <br><br>
+                                    ⏰ <strong>Horario de atención:</strong><br>
+                                    Lunes a viernes: 5:00 a.m. – 10:00 p.m.<br>
+                                    Sábados: 6:00 a.m. – 8:00 p.m.<br>
+                                    Domingos: 7:00 a.m. – 6:00 p.m.
+                                </p>
+                            </div>
+                            <!-- Perfiles de entrenadores -->
+                            <div class="entrenadores">
+                                <h5 class="titulo">Perfiles de Entrenadores</h5>
+                                <p class="parrafo">Conoce a los expertos que te acompañarán en tu entrenamiento en
+                                    Chapinero.</p>
+
+                                <div class="coach-container">
+                                    <article class="coach-card">
+                                        <img src="img/coach4.jpg" alt="Laura Peña">
+                                        <h4>Laura Peña</h4>
+                                        <p>🏃‍♀️ Cardio y entrenamiento funcional</p>
+                                        <p>Apasionada por el movimiento y la salud integral. Más de 4 años de
+                                            experiencia.</p>
+                                        <a href="HTML/login.html" class="btn small">Reservar Sesión</a>
+                                    </article>
+
+                                    <article class="coach-card">
+                                        <img src="img/coach5.jpg" alt="Andrés Rojas">
+                                        <h4>Andrés Rojas</h4>
+                                        <p>🏋️‍♂️ Musculación y fuerza</p>
+                                        <p>Entrenador certificado, enfocado en desarrollo muscular y control postural.
+                                        </p>
+                                        <a href="HTML/login.html" class="btn small">Reservar Sesión</a>
+                                    </article>
+
+                                    <article class="coach-card">
+                                        <img src="img/coach6.jpg" alt="María Castillo">
+                                        <h4>María Castillo</h4>
+                                        <p>🧘 Yoga y bienestar corporal</p>
+                                        <p>Especialista en equilibrio físico y mental mediante técnicas de respiración y
+                                            flexibilidad.</p>
+                                        <a href="HTML/login.html" class="btn small">Reservar Sesión</a>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <h4 class="contact-title">Contacto</h4>
+                            <p class="contacto">
+                                📞 Comunícate al <a href="tel:+573116543210">+57 311 654 3210</a> o visítanos para más
+                                información.
+                            </p>
+                            <div class="btn-cerrar">
+                                <label for="modal-chapinero">cerrrar</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--sede colina-->
+                    <article class="section-card">
+                        <div class="thumb">
+                            <img src="img/colina.png" alt="gimnasio la colina">
+                        </div>
+                        <div class="card-body">
+                            <h4>Colina </h4>
+                            <p class="meta">📍 Av. Boyacá, Carrera 72 with Calle 146 b Caminos de San Lorenzo Bogotá
+                                D.C.
+                            </p>
+                            <div class="boton-modal">
+                                <label for="modal-colina">Ver sede</label>
+                            </div>
+                        </div>
+                    </article>
+                    <!--ventana modal colina-->
+                    <input type="checkbox" id="modal-colina" class="modal-toggle">
+                    <div class="container-modal">
+                        <div class="content-modal">
+                            <div class="thumb">
+                                <img src="img/colina.png" alt="gimnasio la colina">
+                            </div>
+                            <div class="card-body">
+                                <h4>Colina </h4>
+                                <p class="meta">📍Av. Boyacá, Carrera 72 with Calle 146 b Caminos de San Lorenzo Bogotá
+                                    D.C.</p>
+                                <p class="descripcion">
+                                    La sede Colina está diseñada para ofrecerte una experiencia completa: entrenamiento
+                                    de
+                                    fuerza,
+                                    clases grupales y asesorías personalizadas. <br>
+                                    🚴‍♂️ Incluye sala de ciclismo indoor y un área de entrenamiento funcional. <br><br>
+                                    ⏰ <strong>Horario de atención:</strong><br>
+                                    Lunes a viernes: 5:30 a.m. – 9:30 p.m.<br>
+                                    Sábados y domingos: 6:00 a.m. – 7:00 p.m.
+                                </p>
+                                <!-- Perfiles de entrenadores -->
+                                <div class="entrenadores">
+                                    <h5 class="titulo">Perfiles de Entrenadores</h5>
+                                    <p class="parrafo">Descubre a los entrenadores de la sede Colina y empieza a cumplir
+                                        tus
+                                        metas.</p>
+
+                                    <div class="coach-container">
+                                        <article class="coach-card">
+                                            <img src="img/coach7.jpg" alt="Felipe Lozano">
+                                            <h4>Felipe Lozano</h4>
+                                            <p>⚡ Entrenamiento funcional y resistencia</p>
+                                            <p>Motivador nato, enfocado en mejorar tu energía y rendimiento físico.</p>
+                                            <a href="HTML/login.html" class="btn small">Reservar Sesión</a>
+                                        </article>
+
+                                        <article class="coach-card">
+                                            <img src="img/coach8.jpg" alt="Diana Ruiz">
+                                            <h4>Diana Ruiz</h4>
+                                            <p>🧠 Fitness mental y equilibrio corporal</p>
+                                            <p>Experta en rutinas que combinan ejercicio físico con control mental y
+                                                respiración.</p>
+                                            <a href="HTML/login.html" class="btn small">Reservar Sesión</a>
+                                        </article>
+
+                                        <article class="coach-card">
+                                            <img src="img/coach9.jpg" alt="Carlos Torres">
+                                            <h4>Carlos Torres</h4>
+                                            <p>🏋️‍♂️ Fuerza, crossfit y levantamiento</p>
+                                            <p>Preparador físico certificado con amplia trayectoria en programas de alto
+                                                rendimiento.</p>
+                                            <a href="HTML/login.html" class="btn small">Reservar Sesión</a>
+                                        </article>
+                                    </div>
+                                </div>
+
+                                <h4 class="contact-title">Contacto</h4>
+                                <p class="contacto">
+                                    📞 Contacto: <a href="tel:+573202345678">+57 320 234 5678</a> <br>
+                                    ¡Agenda una visita y comienza tu entrenamiento hoy!
+                                </p>
+                            </div>
+
+                            <div class="btn-cerrar">
+                                <label for="modal-colina">cerrrar</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sede Usaquén -->
+                    <article class="section-card">
+                        <div class="thumb">
+                            <img src="img/usaquen.jpg" alt="gimnasio Usaquén">
+                        </div>
+                        <div class="card-body">
+                            <h4>Usaquén</h4>
+                            <p class="meta">📍 Cra 19 # 143 - 08, Usaquén, Bogotá D.C.</p>
+                            <div class="boton-modal">
+                                <label for="modal-usaquen">Ver sede</label>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--modal usaquen -->
+                    <input type="checkbox" id="modal-usaquen" class="modal-toggle">
+                    <div class="container-modal">
+                        <div class="content-modal">
+                            <div class="thumb">
+                                <img src="img/usaquen.jpg" alt="gimnasio Usaquén">
+                            </div>
+
+                            <div class="card-body">
+                                <h4>Usaquén</h4>
+                                <p class="meta">📍 Cra 19 # 143 - 08, Usaquén, Bogotá D.C.</p>
+
+                                <p class="descripcion">
+                                    Esta sede cuenta con máquinas de última generación para entrenamiento funcional,
+                                    pesas, área de cardio y zona de estiramiento. <br>
+                                    ⏰ Horario de atención:<br> Lunes a viernes de 5:00 a.m. a 09:00 p.m. <br>
+                                    Sábados y domingos de 6:00 a.m. a 8:00 p.m.
+                                </p>
+
+                                <!-- Perfiles de entrenadores -->
+                                <div class="entrenadores">
+                                    <h5 class="titulo">Perfiles de Entrenadores</h5>
+                                    <p class="parrafo">Explora los perfiles de nuestros entrenadores y elige al que
+                                        mejor
+                                        se adapte a tus objetivos de entrenamiento personal.</p>
+
+                                    <div class="coach-container">
+                                        <article class="coach-card">
+                                            <img src="img/coach1.jpg" alt="Juan Barrera">
+                                            <h4>Juan Barrera</h4>
+                                            <p>🥊 Boxeo, pesas, cardio</p>
+                                            <p>Más de 5 años ayudando a mejorar el rendimiento físico de nuestros
+                                                miembros.</p>
+                                            <a href="HTML/login.html" class="btn small">Reservar Sesión</a>
+                                        </article>
+
+                                        <article class="coach-card">
+                                            <img src="img/coach2.jpg" alt="Camilo Torres">
+                                            <h4>Camilo Torres</h4>
+                                            <p>💪 Fuerza y entrenamiento funcional</p>
+                                            <p>Entrenador certificado, experto en fuerza y rehabilitación funcional.</p>
+                                            <a href="HTML/login.html" class="btn small">Reservar Sesión</a>
+                                        </article>
+
+                                        <article class="coach-card">
+                                            <img src="img/coach3.jpg" alt="Karen Garzón">
+                                            <h4>Karen Garzón</h4>
+                                            <p>🥗 Nutrición y planes personalizados</p>
+                                            <p>Nutricionista deportiva enfocada en equilibrio entre alimentación y
+                                                entrenamiento.</p>
+                                            <a href="HTML/login.html" class="btn small">Reservar Sesión</a>
+                                        </article>
+                                    </div>
+                                </div>
+                                <h4 class="contact-title">Contacto</h4>
+                                <p class="contacto">
+                                    Consulta cómo inscribirte en nuestra sede comunicándote al <br>
+                                    📞 Contacto: <a href="tel:+573004567890">+57 300 456 7890</a>
+                                </p>
+                            </div>
+
+                            <!-- Botón cerrar -->
+                            <div class="btn-cerrar">
+                                <label for="modal-usaquen">Cerrar</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- pie de pagina -->
+        <footer id="contact" class="site-footer">
+            <div class="container footer-grid">
+
+                <!-- Información de la pagina -->
+                <div class="footer-about">
+                    <h4>Zenfit</h4>
+                    <p>Transforma tu cuerpo, supera tus límites y alcanza tus metas con nosotros</p>
+                </div>
+
+                <!-- Navegación -->
+                <div class="footer-nav">
+                    <h4>Navegación</h4>
+                    <nav>
+                        <a href="#home">Inicio</a>
+                        <a href="#ofertas">Planes</a>
+                        <a href="#clases">Clases</a>
+                        <a href="#sedes">Sedes</a>
+                        <a href="HTML/login.html">Iniciar Sesión</a> <!-- enlace a login -->
+                        <a href="HTML/registro.html">Registrarse</a> <!-- enlace a registro -->
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <ul>
+                        <li><a href="#" aria-label="Instagram">@Kumba</a></li>
+                        <li><a href="#" aria-label="Whatsapp">Whatsapp</a></li>
+                        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                        <li><a href="#" aria-label="TikTok">TikTok</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Derechos reservados -->
+            <div class="copyright">
+                © <span id="year"></span> Kumba. Todos los derechos reservados.
+            </div>
+        </footer>
+
+        <script src="JS/jshome.js"></script>
+    </main>
+</body>
+
+</html>

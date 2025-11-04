@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --azul: #5570d6;
+    --azulOscuro: #0B2545;
+    --azulGris: #6385c4;
+    --blanco: #fff;
+    --letra: black;
+    --fuente: "Poppins", Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--azulOscuro);
+}
+
+.contenedor-formulario {
+    display: flex;
+    width: 900px;
+    height: 600px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.imagen-formulario {
+    flex: 1;
+    background-image: url('../img/img-login.webp');
+    background-position: center center;
+    background-size: cover;
+}
+
+.formulario {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 20px;
+}
+
+.texto-formulario {
+    margin-bottom: 15px;
+    /* Espacio debajo del encabezado y párrafo */
+}
+
+.formulario h2 {
+    font-size: 28px;
+    padding-top: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.formulario p {
+    font-size: 14px;
+    /* Tamaño de párrafo igual que en el registro */
+    margin-bottom: 30px;
+    color: #555;
+    text-align: center;
+    /* Alinea el texto al centro */
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: var(--letra);
+}
+
+.input input:focus {
+    border-color: #668cff;
+}
+
+.password-olvidada a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.password-olvidada a:hover {
+    color: blue;
+}
+
+.input input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input input[type="submit"] {
+    background-color: var(--azulGris);
+    color: var(--blanco);
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.input input[type="submit"]:hover {
+    background-color: var(--azul);
+}
+
+/* Texto de registro debajo del botón */
+.registro-texto {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.registro-texto a {
+    color: var(--azul);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.registro-texto a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .contenedor-formulario {
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .imagen-formulario {
+        flex: 1;
+        background-position: center center;
+        background-size: cover;
+        height: 200px;
+        border-radius: 20px 20px 0 0;
+        display: block;
+    }
+
+    .formulario {
+        border-radius: 0 0 20px 20px;
+        padding-top: 20px;
+    }
+}

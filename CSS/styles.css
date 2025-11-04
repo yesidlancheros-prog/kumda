@@ -1,0 +1,35 @@
+:root{
+  --bg:#fff;
+  --fg:#111;
+  --muted:#666;
+  --card:#f6f6f6;
+  --accent:#2e8ef7;
+}
+
+*{box-sizing:border-box;font-family:Inter,system-ui,Arial,sans-serif}
+body{margin:0;background:var(--bg);color:var(--fg);min-height:100vh}
+
+.page-center{display:flex;justify-content:center;align-items:center;height:100vh;padding:1rem}
+.card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.split{display:flex;width:920px;max-width:95%}
+.left{flex:1;min-height:420px;background:#111 url('../img/chapinero.jpg') center/cover no-repeat;border-top-left-radius:12px;border-bottom-left-radius:12px}
+.right{flex:1;padding:28px}
+.image-area{cursor:pointer}
+.form-area h1{margin:0 0 6px}
+label{display:block;margin-top:12px;font-size:13px;color:var(--muted)}
+input,select{width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #ddd}
+.row{display:flex;gap:10px;margin-top:16px;align-items:center}
+.btn{padding:9px 12px;border-radius:8px;background:transparent;border:1px solid #ccc;cursor:pointer}
+.btn.primary{background:var(--accent);color:white;border:none}
+.btn.link{background:transparent;color:var(--accent);border:none;text-decoration:underline}
+.muted{color:var(--muted);font-size:13px;margin-top:12px}
+
+.hidden{display:none}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:40}
+.modal{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:50;background:var(--bg);padding:18px;border-radius:12px;width:360px;box-shadow:0 10px 30px rgba(0,0,0,0.2)}
+.modal-close{position:absolute;right:10px;top:6px;background:transparent;border:none;font-size:20px;cursor:pointer}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:#111;color:#fff}
+.container{max-width:1100px;margin:28px auto;padding:0 20px}
+.cards{display:flex;gap:18px;flex-wrap:wrap}
+.sede-card{width:320px;background:var(--card);border-radius:10px;padding:12px;box-shadow:0 6px 14px rgba(0,0,0,0.06)}
+#classList .class-item{padding:8px;border-radius:8px;background:#fff;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zenfit - Agenda Semanal</title>
+  <link rel="stylesheet" href="../CSS/SThorarios.css" />
+  <link rel="icon" type="image/x-icon" href="../img/icono.ico" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">🏋️‍♀️ Zenfit</div>
+    <ul>
+      <li id="rutinas"><a href="../HTML/rutinas.html">Rutinas Perzonalizadas</a></li>
+    </ul>
+
+    <div class="role-area">
+      <div class="user-forms">
+        <div class="form-inline">
+          <input id="clientName" placeholder="Nombre cliente" />
+          <input id="clientEmail" placeholder="Email cliente" />
+          <button id="btnRegisterClient">Registrar Cliente</button>
+        </div>
+        <div class="form-inline">
+          <input id="proName" placeholder="Nombre profesor" />
+          <input id="proEmail" placeholder="Email profesor" />
+          <button id="btnRegisterPro">Registrar Profesor</button>
+        </div>
+      </div>
+      <div class="role-choose">
+        <label><input type="radio" name="role" value="client" checked /> Cliente</label>
+        <label><input type="radio" name="role" value="pro" /> Profesor</label>
+        <span id="currentUserInfo"></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <div class="legend">
+        <span class="pill">Clase</span>
+        <span class="pill orange">Seleccion múltiple</span>
+      </div>
+      <div class="info">Haz clic en una celda horaria para ver/crear clases. Los profesores pueden crear múltiples tipos
+        a la vez.</div>
+    </section>
+
+    <section class="calendar-wrapper">
+      <div class="hours-col" id="hoursCol"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+  </main>
+
+  <!-- Modal add/edit class -->
+  <div class="modal" id="modal">
+    <div class="modal-panel">
+      <h3 id="modalTitle">Crear clase</h3>
+      <div class="modal-body">
+        <label>Profesor (tu nombre):</label>
+        <input id="modalProf" />
+        <label>Selecciona tipos de clases (múltiple):</label>
+        <div id="typesList" class="types-list">
+        </div>
+        <label>Ubicación:</label>
+        <input id="modalLocation" placeholder="Parque, Gimnasio X, Calle ..." />
+        <label>Capacidad (opcional):</label>
+        <input id="modalCapacity" type="number" min="1" placeholder="N° de plazas (ej: 20)" />
+        <div class="modal-actions">
+          <button id="saveClass">Guardar</button>
+          <button id="cancelModal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="../JS/jsHorarios.js"></script>
+</body>
+
+</html>

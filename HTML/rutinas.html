@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenfit | Rutinas Personalizadas</title>
+    <link rel="stylesheet" href="../CSS/styleRutina.css">
+    <link rel="icon" type="image/x-icon" href="../img/icono.ico" />
+
+</head>
+
+<body>
+    <header>
+        <h1>Zenfit</h1>
+        <ul>
+            <li id="horarios"><a href="../HTML/horarios.html">Horarios</a></li>
+        </ul>
+    </header>
+
+    <section class="rutinas">
+        <div class="rutina">
+            <img src="masa.png" alt="Ganar masa muscular">
+            <h2>Ganar Masa Muscular</h2>
+            <p>Rutina enfocada en fuerza y volumen muscular.</p>
+            <button data-rutina="Masa">Ver rutina</button>
+        </div>
+
+        <div class="rutina">
+            <img src="peso.png" alt="Bajar de peso">
+            <h2>Bajar de Peso</h2>
+            <p>Ejercicios para quemar grasa y mejorar resistencia.</p>
+            <button data-rutina="Peso">Ver rutina</button>
+        </div>
+
+        <div class="rutina">
+            <img src="tonificar.png" alt="Tonificar">
+            <h2>Tonificar</h2>
+            <p>Rutina para definir músculos y mejorar postura.</p>
+            <button data-rutina="Tonificar">Ver rutina</button>
+        </div>
+
+        <div class="rutina">
+            <img src="funcional.png" alt="Entrenamiento funcional">
+            <h2>Entrenamiento Funcional</h2>
+            <p>Movimientos dinámicos para todo el cuerpo.</p>
+            <button data-rutina="Funcional">Ver rutina</button>
+        </div>
+    </section>
+
+    <div id="rutina-detalles" class="rutina-detalle"></div>
+
+    <footer>
+        <p>© 2025 Zenfit | Diseñado para tu bienestar físico y mental</p>
+    </footer>
+
+    <script src="../JS/jsRutinas.js"></script>
+</body>
+
+</html>
